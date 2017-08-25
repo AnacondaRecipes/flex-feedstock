@@ -16,12 +16,14 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
     - automake
-    - libiconv
+    - libiconv  # [not linux and not win]
     - m4
 
   run:
-    - libiconv
+    - libiconv  # [not linux and not win]
     - m4
 
 test:
