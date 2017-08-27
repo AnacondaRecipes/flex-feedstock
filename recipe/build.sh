@@ -8,7 +8,7 @@ if [ `uname` == Linux ]; then
     export HELP2MAN=/bin/true
 fi
 ./configure --prefix="$PREFIX" --host=${HOST}
-make -j${CPU_COUNT}
+make -j${CPU_COUNT} ${VERBOSE_AT}
 # CXX restart fails?
 # make check
 make install
