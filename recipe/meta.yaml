@@ -43,6 +43,11 @@ about:
   home: http://flex.sourceforge.net/
   license: BSD 2-Clause
   summary: The Fast Lexical Analyzer
+  description: |
+    flex is a tool for generating scanners: programs which recognize lexical patterns in text.
+  doc_url: 
+  dev_url: https://github.com/westes/flex
+  doc_source_url: https://github.com/westes/flex/tree/master/doc
 
 extra:
   recipe-maintainers:
