@@ -6,6 +6,7 @@ if [ `uname` == Darwin ]; then
 fi
 if [ `uname` == Linux ]; then
     export HELP2MAN=/bin/true
+    export CFLAGS="-g -O2 -D_GNU_SOURCE $CFLAGS"
 fi
 if [[ ${HOST} =~ .*linux.* ]]; then
     export CC=${GCC}
