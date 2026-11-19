@@ -12,6 +12,7 @@ source:
 build:
   skip: true  # [win]
   number: 1
+  string: {{ compiler_variant }}_h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}
   detect_binary_files_with_prefix: true
 
 requirements:
